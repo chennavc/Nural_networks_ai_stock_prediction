@@ -20,10 +20,12 @@ import keras
 import datetime
 app = Flask(__name__)
 
-
-
-@app.route("/",methods=['GET','POST'])
+@app.route("/")
 def start():
+    return render_template('index.html')
+
+@app.route("/result",methods=['GET','POST'])
+def result():
     if request.method == 'POST':
         symbol=request.form['symbol']
         msft = yf.Ticker(symbol)
