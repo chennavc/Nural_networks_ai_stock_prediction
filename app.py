@@ -71,7 +71,7 @@ def result():
         model.add(Dense(1))
         model.compile(loss='mean_squared_error',optimizer='adam',metrics=["acc"])
         
-        history = model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=100,batch_size=64,verbose=1)
+        history = model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=5,batch_size=64,verbose=1)
         #model learning
 
         plt.plot(history.history['acc'])
