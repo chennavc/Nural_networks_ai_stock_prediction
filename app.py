@@ -20,8 +20,10 @@ import keras
 import datetime
 app = Flask(__name__)
 
+
+
 @app.route("/",methods=['GET','POST'])
-def home():
+def start():
     if request.method == 'POST':
         symbol=request.form['symbol']
         msft = yf.Ticker(symbol)
@@ -191,4 +193,4 @@ def comingsoon ():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
