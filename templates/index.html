@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Template Name: Yeinydd
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+
+<head>
+    <title>AI trading prediction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="{{ url_for('static', filename='layout/styles/layout.css') }}" rel="stylesheet" type="text/css" media="all">
+
+</head>
+
+
+<body id="top">
+
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('../static/images/demo/backgrounds/001.jpg');">
+        <!-- ################################################################################################ -->
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <div id="logo" class="fl_left">
+                    <h1><a href="/">AI stock predictor</a></h1>
+                </div>
+                <!-- ################################################################################################ -->
+                <nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a class="drop" href="/comingsoon">custome your model</a>
+                        </li>
+                        <li><a class="drop" href="/comingsoon">multipule predictions</a>
+
+                    </ul>
+                </nav>
+
+            </header>
+        </div>
+
+        <div id="pageintro" class="hoc clear">
+            <article>
+                <h3 class="heading">Welcome to AI stock prediction assitant </h3>
+                <p>This Assistant will help you predict Stocks using Artificial Intelligence. Enter the Symbol you want to search for:</p>
+                <div id="loading" style="display: none;">
+                    <img src="../static/images/robo.gif" class="img-responsive" alt="">
+                    <p>Please be patient it will take awhile to train an Artificial Neural Network (LSTM)</p>
+                </div>
+                <footer>
+
+                    <form class="group" method="post">
+                        <legend>Sign-Up:</legend>
+                        <input name="symbol" placeholder="Enter the sybol here">
+                        <button class="fas fa-sign-in-alt" type="submit" title="Submit" onclick="loading();"><em>Submit</em></button>
+
+                    </form>
+                </footer>
+            </article>
+
+        </div>
+
+    </div>
+
+
+
+
+    </section>
+    </div>
+
+    </footer>
+    </div>
+
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+
+
+    <script type="text/javascript">
+        // <![CDATA[
+        function loading() {
+            $("#loading").show();
+            // $("#content").hide();
+        }
+        // ]]>
+    </script>
+    <script src="{{ url_for('static', filename='layout/scripts/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='layout/scripts/jquery.backtotop.js') }}"></script>
+    <script src="{{ url_for('static', filename='layout/scripts/jquery.mobilemenu.js') }}"></script>
+</body>
+
+</html>
