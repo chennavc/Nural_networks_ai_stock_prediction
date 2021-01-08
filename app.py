@@ -23,6 +23,10 @@ app = Flask(__name__)
 
 @app.route("/",methods=['GET','POST'])
 def home():
+    return render_template('index.html')
+
+@app.route("/",methods=['GET','POST'])
+def home():
     if request.method == 'POST':
         symbol=request.form['symbol']
         opkdff=ml.prediction(symbol)
